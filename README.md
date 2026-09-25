@@ -12,7 +12,7 @@ realistic but fake value. Layout, tables, headers and formatting are left as the
 
 ```bash
 pip install -r requirements-dev.txt
-python redact.py "Red Herring Prospectus.docx" -o output/redacted.docx    # CLI, ~10 s
+python redact.py "Red Herring Prospectus.docx" -o output/redacted.docx    # CLI, ~20 s
 streamlit run app.py                                                       # web UI (upload -> download)
 pytest                                                                     # 56 tests
 python eval/evaluate.py && python eval/build_report.py                     # metrics + report
