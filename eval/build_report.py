@@ -153,7 +153,7 @@ bullets([
      f"{f3(hy['token']['accuracy'])} ({rt['gold_spans']} gold PII spans in {rt['items']} paragraphs)."),
     ("Development prospectus sample: ", f"precision {f3(rd['hybrid']['micro']['relaxed']['precision'])}, recall "
      f"{f3(rd['hybrid']['micro']['relaxed']['recall'])}, F1 {f3(rd['hybrid']['micro']['relaxed']['f1'])} "
-     f"({rd['gold_spans']} spans). The test numbers are the honest ones: no tuning was done on them."),
+     f"({rd['gold_spans']} spans). No tuning was done on the test set, so its numbers are the ones to trust."),
     ("Synthetic held-out test ", f"(SSN, cards, DOB, IPs and the other types the prospectus lacks): precision "
      f"{f3(st_['hybrid']['micro']['relaxed']['precision'])}, recall {f3(st_['hybrid']['micro']['relaxed']['recall'])}, "
      f"F1 {f3(st_['hybrid']['micro']['relaxed']['f1'])}."),

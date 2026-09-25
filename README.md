@@ -6,7 +6,7 @@ realistic but fake value. Layout, tables, headers and formatting are left as the
 > The assignment text says "ticket log", but the attached dataset is the **Red Herring Prospectus** of KSH International
 > Limited (an IPO filing, 126 pages, 76 tables). The tool works on any `.docx`; this README and the evaluation are about that file.
 
-**Live demo:** [_add your deployed link here_](https://pii-redactiontool-abhay.streamlit.app/) · **Evaluation report:** `output/Evaluation_Report.docx`
+**Live demo:** [pii-redactiontool-abhay.streamlit.app](https://pii-redactiontool-abhay.streamlit.app/) · **Evaluation report:** `output/Evaluation_Report.docx`
 
 ## Run it
 
