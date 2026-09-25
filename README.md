@@ -14,11 +14,11 @@ realistic but fake value. Layout, tables, headers and formatting are left as the
 pip install -r requirements-dev.txt
 python redact.py "Red Herring Prospectus.docx" -o output/redacted.docx    # CLI, ~10 s
 streamlit run app.py                                                       # web UI (upload -> download)
-pytest                                                                     # 49 tests
+pytest                                                                     # 56 tests
 python eval/evaluate.py && python eval/build_report.py                     # metrics + report
 ```
 
-`--mode regex` needs no model, `--skip URL ORG` leaves a category alone, `--seed` changes the fakes,
+`--mode regex` needs no model, `--no-images` skips picture redaction, `--skip URL ORG` leaves a category alone, `--seed` changes the fakes,
 `--audit log.json` writes every replacement (that file contains the **original** PII, so it is git-ignored).
 
 ## Approach
@@ -31,6 +31,7 @@ python eval/evaluate.py && python eval/build_report.py                     # met
 | CIN, PAN, GSTIN, Aadhaar, SEBI reg. no. | Format regex (India-specific extras) |
 | Addresses | Anchored on a PIN / ZIP code, then walked outwards to the start of the address and its state/country tail; locality names learned from those addresses are then found elsewhere |
 | Companies | Legal-suffix rules (Limited, LLP, Bank, Trust ...), then their brand words are matched everywhere |
+| **Pictures** | The prospectus embeds a **PAN card and an Aadhaar card as photos**. OCR (RapidOCR) reads every embedded image; the same detectors plus ID-card layout rules (ALL-CAPS name lines, "Father:", address blocks, dd/mm/yyyy dates, 12-digit numbers) find PII; matches are covered with black boxes, faces are pixelated, QR codes are blanked. The hidden page-one thumbnail is removed. |
 | Names | spaCy proposes candidates; a candidate is kept only if it is not a common word of this document, not a place, not an acronym, and contains a known given name/surname or initial (or follows a cue like "Contact Person:"). Accepted names go into a lexicon matched case-insensitively across the document |
 
 Why not plain NER: on this document spaCy tags "Offer", "Promoters" and "Bandra Kurla Complex" as people and misses
@@ -42,7 +43,7 @@ the family keeps one shared surname. An email's fake domain matches the company'
 real person: `example.com`, RFC 5737 IPs, SSN area 9xx, Aadhaar starting with 1, Luhn-valid cards.
 
 **Also handled:** 105 hidden `HYPERLINK "mailto:..."` field codes (they keep the real address when only the visible text is
-changed), text boxes, headers/footers, tracking-URL query strings, document author/last-modified-by.
+changed), text boxes, headers/footers, tracking-URL query strings, document author/last-modified-by, the page-one thumbnail.
 
 ## What I chose to treat as PII
 
@@ -58,6 +59,7 @@ Hand-labelled prospectus paragraphs plus synthetic ticket text for the types the
 |---|---|---|---|---|
 | Prospectus, held-out test (45 spans) | 0.978 | 0.978 | 0.978 | 0.996 |
 | Synthetic tickets, held-out test (480 spans) | 0.978 | 0.915 | 0.945 | 0.970 |
+| ID-card images in the prospectus (2 cards, 9 OCR-readable fields; in-sample) | - | 9 / 9 covered | - | faces 2 -> 0 |
 | Baselines on the prospectus test: regex only / raw NER | 0.963 / 0.349 | 0.578 / 0.844 | 0.722 / 0.493 | 0.958 / 0.872 |
 
 ## Trade-offs and errors I saw
@@ -67,7 +69,7 @@ Hand-labelled prospectus paragraphs plus synthetic ticket text for the types the
 - **False positives:** the URL rule redacts regulator websites too; a 4-octet version number with no "version/firmware" word before it
   looks like an IP; a 10-digit order ID starting with 6-9 and no "order" word looks like a mobile number.
 - The 0.97-1.0 scores come from small gold sets (about 130 prospectus spans); expect a couple of points of noise either way.
-- Images (the cover QR code, logos) are not processed.
+- **Images:** OCR cannot read handwriting or Devanagari, so the Hindi line above each name and the signature are covered by *position*; a low-resolution photographed QR is found by a texture heuristic; the ID rules were built on the two cards in this document, so that result is in-sample; the tax office's printed address on the PAN card's back is partly over-redacted. Blanking (not a fake value) is the only sensible replacement for a photo.
 
 ## Extending it: a new PII type in three steps
 
@@ -84,11 +86,12 @@ redact.py            CLI                        app.py           Streamlit UI
 pii_redactor/
   pipeline.py        load -> clean -> learn -> detect -> fake -> save
   docx_io.py         paragraph text <-> XML runs, headers, text boxes, field codes
+  images.py          OCR + ID-card rules + face/QR blanking for embedded pictures
   clean.py           invisible characters, non-breaking and repeated spaces
   detectors/         patterns.py (regex) · address.py · names.py (NER + lexicon)
   fakes.py           deterministic, format-preserving replacements
   data/              indian_names.txt (extra name list)
-tests/               49 pytest cases        eval/   gold sets, generator, evaluation, report builder
+tests/               56 pytest cases        eval/   gold sets, generator, evaluation, report builder
 output/              redacted.docx, Evaluation_Report.docx
 ```
 

@@ -124,6 +124,16 @@ def iter_field_codes(doc) -> list[ParagraphText]:
     return out
 
 
+def drop_thumbnail(doc) -> bool:
+    """Word can store a preview image of page one inside the file; it would show the
+    original, unredacted cover page. Remove the relationship (and with it the part)."""
+    rels = doc.part.package.rels
+    ids = [rid for rid, rel in rels.items() if rel.reltype.endswith("/thumbnail")]
+    for rid in ids:
+        rels.pop(rid)
+    return bool(ids)
+
+
 def scrub_metadata(doc, replacements: dict[str, str]) -> None:
     """Document properties often carry author names."""
     props = doc.core_properties

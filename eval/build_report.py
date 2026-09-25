@@ -160,7 +160,9 @@ bullets([
     ("Ablation: ", f"on the prospectus test set regex-only reaches F1 {f3(rt['regex']['micro']['relaxed']['f1'])} and raw NER "
      f"F1 {f3(rt['ner']['micro']['relaxed']['f1'])} (precision only {f3(rt['ner']['micro']['relaxed']['precision'])}). "
      "The curated hybrid is what makes both precision and recall high."),
-    ("End to end: ", f"{e2e['leak']['test']['leaked']} of {e2e['leak']['test']['gold_spans']} test PII strings survive in the "
+    ("Images: ", "the prospectus embeds a PAN card and an Aadhaar card as photographs. OCR-based redaction covers all 9 text fields OCR could "
+     "read on them, pixelates both faces and blanks both QR codes (section 3.5)."),
+    ("End to end: ",f"{e2e['leak']['test']['leaked']} of {e2e['leak']['test']['gold_spans']} test PII strings survive in the "
      f"output file; {e2e['inconsistent_mappings']} inconsistent replacements out of {e2e['entities_replaced']}; "
      f"format preserved for {e2e['format_preserved']} phones/emails/IDs; runtime {e2e['seconds']} s for 126 pages."),
 ])
@@ -276,6 +278,41 @@ table(["Check", "Result"], [
     ["Runtime", f"{e2e['seconds']} s for the 126-page document"],
 ], widths=[3.2, 3.6])
 
+h("3.5 Pictures inside the document", 2)
+IMG = json.load(open("eval/results_images.json"))
+para(f"The prospectus contains {IMG['images_in_document']} embedded images, including two identity-card photographs (a PAN card and an "
+     "Aadhaar card) that carry names, father's names, dates of birth, ID numbers, an address, photos, QR codes and a handwritten "
+     "signature. None of that is text, so the text pipeline cannot see it. Images are handled separately: OCR (RapidOCR) reads each "
+     "picture, the same detectors plus ID-card layout rules find PII in the OCR text, matching regions are covered with black boxes, "
+     "faces are pixelated, QR codes are blanked, and the document's hidden page-one thumbnail is removed. A photograph cannot be given "
+     "a believable fake value the way text can, so blanking is used instead of replacement.")
+table(["Card", "Field", "OCR-readable before", "OCR-readable after"],
+      [[r["image"], r["field"], "yes" if r["readable_before"] else "no", "yes" if r["readable_after"] else "no"] for r in IMG["rows"]],
+      widths=[1.2, 2.3, 1.6, 1.6])
+import io as _io          # noqa: E402
+import zipfile as _zip    # noqa: E402
+from PIL import Image as _Image  # noqa: E402
+
+_z = _zip.ZipFile("output/redacted.docx")
+_cards = [_Image.open(_io.BytesIO(_z.read(n))).convert("RGB") for n in ("word/media/image4.png", "word/media/image5.png")]
+_sheet = _Image.new("RGB", (sum(c.width for c in _cards), max(c.height for c in _cards)), "white")
+_x = 0
+for _c in _cards:
+    _sheet.paste(_c, (_x, 0))
+    _x += _c.width
+_sheet.thumbnail((1500, 1000))
+_sheet.save("output/fig_images_redacted.png")
+doc.add_picture("output/fig_images_redacted.png", width=Inches(6.3))
+para("The two ID-card images as they appear in output/redacted.docx (only the redacted versions are shown here on purpose).", italic=True)
+para(f"Result: {IMG['fields_covered']} of {IMG['fields_readable_before']} text fields that OCR could read in the originals can no longer be read "
+     f"after redaction; faces detected fell from {IMG['faces_before']} to {IMG['faces_after']}. By eye, both QR codes, both photos and "
+     "the PAN card's handwritten signature are covered. One field ('Address (locality)') was never readable by OCR in the original "
+     "so it does not count in the score, although the address block is covered by layout rule.", italic=True)
+para("Caveats: this is a proxy (machine readability, not a human reading a partly covered word); the ID rules were developed on these two "
+     "cards, so the result is in-sample; OCR cannot read Devanagari or handwriting (the Hindi lines above each name are covered by "
+     "position, not by reading them); a low-resolution photographed QR is found by a texture heuristic, not decoded; and the tax office's own "
+     "printed address on the PAN card's back is partly covered too, which is over-redaction.")
+
 h("4. Error analysis")
 para("Every remaining error on the two prospectus sets, and the reason:")
 rows = []
@@ -313,7 +350,7 @@ bullets([
     "'Cash and Bank Balances' no longer read as a bank, and not creating empty header parts). They came from auditing the full list of "
     "replacements in the whole 126-page document, not from test-set errors, and the evaluation was re-run afterwards with the same numbers.",
     "The synthetic set is generated from templates, so it measures pattern coverage, not the variety of real tickets.",
-    "Only the prospectus's own text is scored. Images (the cover QR code and logos) can carry names and are not processed.",
+    "The text metrics score the prospectus's text only. Images are evaluated separately in section 3.5, on two cards, in-sample.",
 ])
 
 h("6. Reproduce")

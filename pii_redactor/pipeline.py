@@ -3,7 +3,7 @@ import json
 from collections import Counter
 from dataclasses import dataclass, field
 
-from . import docx_io
+from . import docx_io, images
 from .detectors import PATTERN_DETECTORS, NameLexicon, find_addresses
 from .fakes import Pseudonymizer
 from .spans import Span, resolve_overlaps
@@ -18,12 +18,15 @@ class Policy:
     mode: str = "hybrid"
     skip_labels: frozenset[str] = frozenset()
     seed: str = "pii-redactor"
+    images: bool = True          # OCR + blank PII inside embedded pictures
 
 
 @dataclass
 class Report:
     entities: list[dict] = field(default_factory=list)
     cleaning: Counter = field(default_factory=Counter)
+    images: list[dict] = field(default_factory=list)
+    warnings: list[str] = field(default_factory=list)
 
     @property
     def counts(self) -> Counter:
@@ -72,6 +75,16 @@ class Redactor:
         spans = [s for s in spans if s.label not in self.policy.skip_labels]
         return resolve_overlaps(spans)
 
+    def detect_in_image_text(self, text: str) -> list[Span]:
+        """OCR text has no document context, so on top of the normal detectors accept any
+        capitalised name that contains a known given name/surname (a scanned ID lists a
+        person nobody has mentioned in the body text)."""
+        spans = self.detect(text)
+        if self.policy.mode == "hybrid":
+            for run, a, b in self.lexicon._candidate_names(text, True, text, 0):
+                spans.append(Span(a, b, "PERSON", 30))
+        return resolve_overlaps(spans)
+
     # -- file level -----------------------------------------------------------------
     def redact_file(self, src, dst, audit_path: str | None = None) -> Report:
         report = Report()
@@ -91,6 +104,13 @@ class Redactor:
                 report.entities.append({"para": idx, "field_code": idx >= len(paras), "start": s.start, "end": s.end,
                                         "label": s.label, "original": original, "replacement": fake})
             para.apply(edits)
+        if self.policy.images:
+            if images.available():
+                report.images = images.redact_document_images(doc, self.detect_in_image_text)
+                report.warnings += [f"{r['image']}: {r['error']}" for r in report.images if "error" in r]
+            else:
+                report.warnings.append("Image redaction skipped: OCR packages are not installed.")
+        docx_io.drop_thumbnail(doc)      # a picture of the ORIGINAL first page
         docx_io.scrub_metadata(doc, {"author": "Redacted", "last_modified_by": "Redacted",
                                      "comments": "", "keywords": ""})
         doc.save(dst)

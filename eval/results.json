@@ -491,7 +491,7 @@
     "accuracy": 0.9855,
     "tokens": 1516
    },
-   "seconds": 4.5,
+   "seconds": 7.0,
    "errors": [
     {
      "kind": "FN",
@@ -811,7 +811,7 @@
     "accuracy": 0.8723,
     "tokens": 1410
    },
-   "seconds": 0.2,
+   "seconds": 0.4,
    "errors": []
   },
   "hybrid": {
@@ -954,7 +954,7 @@
     "accuracy": 0.9957,
     "tokens": 1410
    },
-   "seconds": 4.7,
+   "seconds": 7.4,
    "errors": [
     {
      "kind": "FN",
@@ -1378,7 +1378,7 @@
     "accuracy": 0.9276,
     "tokens": 3397
    },
-   "seconds": 1.0,
+   "seconds": 1.7,
    "errors": []
   },
   "hybrid": {
@@ -1575,7 +1575,7 @@
     "accuracy": 0.9647,
     "tokens": 3397
    },
-   "seconds": 0.4,
+   "seconds": 0.8,
    "errors": [
     {
      "kind": "FP",
@@ -2321,7 +2321,7 @@
     "accuracy": 0.924,
     "tokens": 3423
    },
-   "seconds": 1.0,
+   "seconds": 1.8,
    "errors": []
   },
   "hybrid": {
@@ -2518,7 +2518,7 @@
     "accuracy": 0.9696,
     "tokens": 3423
    },
-   "seconds": 0.5,
+   "seconds": 0.7,
    "errors": [
     {
      "kind": "FP",
@@ -2941,7 +2941,7 @@
   "inconsistent_mappings": 0,
   "unchanged_replacements": 0,
   "format_preserved": "164/164",
-  "seconds": 5.9,
+  "seconds": 22.9,
   "cleaning": {
    "invisible_chars_removed": 0,
    "non_breaking_spaces_fixed": 0,

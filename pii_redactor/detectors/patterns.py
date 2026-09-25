@@ -114,7 +114,7 @@ PATTERN_DETECTORS: list[RegexDetector] = [
     _d("IP_ADDRESS", r"(?<![\w:])(?:[0-9A-Fa-f]{1,4}:){7}[0-9A-Fa-f]{1,4}(?![\w:])", 78),
     _d("IP_ADDRESS", r"(?<![\w:])(?:[0-9A-Fa-f]{1,4}:){1,6}:(?:[0-9A-Fa-f]{1,4}(?::[0-9A-Fa-f]{1,4}){0,5})?(?![\w:])", 77),
 
-    _d("DOB", rf"(?:\bd\.?o\.?b\.?|date\s+of\s+birth|\bborn(?:\s+on)?)\b[\s:.,-]*({DATE})", 72,
+    _d("DOB", rf"(?:\bd\.?o\.?b\.?|date\s*of\s*birth|\bborn(?:\s+on)?)\b[\s:.,-]*({DATE})", 72,
        flags=re.I, group=1),
 
     _d("PHONE", r"(?<![\w.])\+\s?\d{1,3}(?:[\s.-]?\(?\d{1,5}\)?){2,4}(?!\d)", 60, validate=phone_digits_ok),

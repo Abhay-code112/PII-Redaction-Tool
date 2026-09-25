@@ -1,0 +1,69 @@
+{
+ "rows": [
+  {
+   "image": "image4.png",
+   "field": "PAN number",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image4.png",
+   "field": "Name",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image4.png",
+   "field": "Father's name",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image4.png",
+   "field": "Date of birth",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Name",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Father's name",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Date of birth",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Aadhaar number (front)",
+   "readable_before": true,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Address (locality)",
+   "readable_before": false,
+   "readable_after": false
+  },
+  {
+   "image": "image5.png",
+   "field": "Address (PIN)",
+   "readable_before": true,
+   "readable_after": false
+  }
+ ],
+ "fields_readable_before": 9,
+ "fields_covered": 9,
+ "faces_before": 2,
+ "faces_after": 0,
+ "images_in_document": 8
+}
