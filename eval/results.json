@@ -1,0 +1,2951 @@
+{
+ "real_dev": {
+  "items": 70,
+  "gold_spans": 86,
+  "gold_by_label": {
+   "ORG": 28,
+   "ID_NUMBER": 6,
+   "ADDRESS": 8,
+   "PERSON": 27,
+   "EMAIL": 10,
+   "URL": 4,
+   "PHONE": 3
+  },
+  "regex": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ID_NUMBER": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.6786,
+      "f1": 0.8085,
+      "tp": 19,
+      "fp": 0,
+      "fn": 9
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.6786,
+      "f1": 0.8085,
+      "tp": 19,
+      "fp": 0,
+      "fn": 9
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 27
+     },
+     "strict": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 27
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 1.0,
+     "recall": 0.5581,
+     "f1": 0.7164,
+     "tp": 48,
+     "fp": 0,
+     "fn": 38
+    },
+    "strict": {
+     "precision": 1.0,
+     "recall": 0.5581,
+     "f1": 0.7164,
+     "tp": 48,
+     "fp": 0,
+     "fn": 38
+    }
+   },
+   "token": {
+    "precision": 1.0,
+    "recall": 0.6645,
+    "f1": 0.7984,
+    "tp": 200,
+    "fp": 0,
+    "fn": 101,
+    "tn": 1215,
+    "accuracy": 0.9334,
+    "tokens": 1516
+   },
+   "seconds": 0.0,
+   "errors": []
+  },
+  "ner": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ID_NUMBER": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.2405,
+      "recall": 0.6786,
+      "f1": 0.3551,
+      "tp": 19,
+      "fp": 60,
+      "fn": 9
+     },
+     "strict": {
+      "precision": 0.2278,
+      "recall": 0.6429,
+      "f1": 0.3364,
+      "tp": 18,
+      "fp": 61,
+      "fn": 10
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.4286,
+      "recall": 0.4444,
+      "f1": 0.4364,
+      "tp": 12,
+      "fp": 16,
+      "fn": 15
+     },
+     "strict": {
+      "precision": 0.2143,
+      "recall": 0.2222,
+      "f1": 0.2182,
+      "tp": 6,
+      "fp": 22,
+      "fn": 21
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.4412,
+     "recall": 0.6977,
+     "f1": 0.5405,
+     "tp": 60,
+     "fp": 76,
+     "fn": 26
+    },
+    "strict": {
+     "precision": 0.3897,
+     "recall": 0.6163,
+     "f1": 0.4775,
+     "tp": 53,
+     "fp": 83,
+     "fn": 33
+    }
+   },
+   "token": {
+    "precision": 0.63,
+    "recall": 0.8372,
+    "f1": 0.719,
+    "tp": 252,
+    "fp": 148,
+    "fn": 49,
+    "tn": 1067,
+    "accuracy": 0.8701,
+    "tokens": 1516
+   },
+   "seconds": 0.3,
+   "errors": []
+  },
+  "hybrid": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "tp": 6,
+      "fp": 0,
+      "fn": 2
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ID_NUMBER": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "tp": 27,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.9643,
+      "f1": 0.9818,
+      "tp": 27,
+      "fp": 0,
+      "fn": 1
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 1.0,
+     "recall": 0.9651,
+     "f1": 0.9822,
+     "tp": 83,
+     "fp": 0,
+     "fn": 3
+    },
+    "strict": {
+     "precision": 1.0,
+     "recall": 0.9651,
+     "f1": 0.9822,
+     "tp": 83,
+     "fp": 0,
+     "fn": 3
+    }
+   },
+   "token": {
+    "precision": 1.0,
+    "recall": 0.9269,
+    "f1": 0.9621,
+    "tp": 279,
+    "fp": 0,
+    "fn": 22,
+    "tn": 1215,
+    "accuracy": 0.9855,
+    "tokens": 1516
+   },
+   "seconds": 4.5,
+   "errors": [
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Al-Ahleia Switchgear Co.",
+     "context": "Note: Our top 10 customers include Al-Ahleia Switchgear Co., Bharat Bijlee Limited; CG Power and Industrial So",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ADDRESS",
+     "text": "Lodha I Think Techno Campus, O-3 Level",
+     "context": "HDFC Bank Limited, FIG-OPS Department \u2013 Lodha I Think Techno Campus, O-3 Level",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ADDRESS",
+     "text": "3rd Floor, 362, Satguru House Next to Tanishq Showroom, CTS No. 30",
+     "context": "ICICI Bank, CBG, 3rd Floor, 362, Satguru House Next to Tanishq Showroom, CTS No. 30",
+     "note": "missed entirely"
+    }
+   ]
+  }
+ },
+ "real_test": {
+  "items": 65,
+  "gold_spans": 45,
+  "gold_by_label": {
+   "PERSON": 12,
+   "ORG": 13,
+   "EMAIL": 3,
+   "URL": 3,
+   "ADDRESS": 6,
+   "PHONE": 8
+  },
+  "regex": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.5385,
+      "f1": 0.7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 6
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.5385,
+      "f1": 0.7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 6
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12
+     },
+     "strict": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.963,
+     "recall": 0.5778,
+     "f1": 0.7222,
+     "tp": 26,
+     "fp": 1,
+     "fn": 19
+    },
+    "strict": {
+     "precision": 0.963,
+     "recall": 0.5778,
+     "f1": 0.7222,
+     "tp": 26,
+     "fp": 1,
+     "fn": 19
+    }
+   },
+   "token": {
+    "precision": 0.9921,
+    "recall": 0.6831,
+    "f1": 0.8091,
+    "tp": 125,
+    "fp": 1,
+    "fn": 58,
+    "tn": 1226,
+    "accuracy": 0.9582,
+    "tokens": 1410
+   },
+   "seconds": 0.0,
+   "errors": []
+  },
+  "ner": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.1594,
+      "recall": 0.8462,
+      "f1": 0.2683,
+      "tp": 11,
+      "fp": 58,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 0.1304,
+      "recall": 0.6923,
+      "f1": 0.2195,
+      "tp": 9,
+      "fp": 60,
+      "fn": 4
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.4,
+      "recall": 0.6667,
+      "f1": 0.5,
+      "tp": 8,
+      "fp": 12,
+      "fn": 4
+     },
+     "strict": {
+      "precision": 0.35,
+      "recall": 0.5833,
+      "f1": 0.4375,
+      "tp": 7,
+      "fp": 13,
+      "fn": 5
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.3486,
+     "recall": 0.8444,
+     "f1": 0.4935,
+     "tp": 38,
+     "fp": 71,
+     "fn": 7
+    },
+    "strict": {
+     "precision": 0.3211,
+     "recall": 0.7778,
+     "f1": 0.4545,
+     "tp": 35,
+     "fp": 74,
+     "fn": 10
+    }
+   },
+   "token": {
+    "precision": 0.5046,
+    "recall": 0.8962,
+    "f1": 0.6457,
+    "tp": 164,
+    "fp": 161,
+    "fn": 19,
+    "tn": 1066,
+    "accuracy": 0.8723,
+    "tokens": 1410
+   },
+   "seconds": 0.2,
+   "errors": []
+  },
+  "hybrid": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "tp": 5,
+      "fp": 0,
+      "fn": 1
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "URL": {
+     "relaxed": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "tp": 3,
+      "fp": 1,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.9778,
+     "recall": 0.9778,
+     "f1": 0.9778,
+     "tp": 44,
+     "fp": 1,
+     "fn": 1
+    },
+    "strict": {
+     "precision": 0.9778,
+     "recall": 0.9778,
+     "f1": 0.9778,
+     "tp": 44,
+     "fp": 1,
+     "fn": 1
+    }
+   },
+   "token": {
+    "precision": 0.9944,
+    "recall": 0.9727,
+    "f1": 0.9834,
+    "tp": 178,
+    "fp": 1,
+    "fn": 5,
+    "tn": 1226,
+    "accuracy": 0.9957,
+    "tokens": 1410
+   },
+   "seconds": 4.7,
+   "errors": [
+    {
+     "kind": "FN",
+     "label": "ADDRESS",
+     "text": "Pune 411 045 Maharashtra, India",
+     "context": "Pune 411 045 Maharashtra, India",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "URL",
+     "text": "www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=10",
+     "context": "URL of SEBI website: www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=10",
+     "note": "not PII"
+    }
+   ]
+  }
+ },
+ "synth_dev": {
+  "items": 336,
+  "gold_spans": 480,
+  "gold_by_label": {
+   "PERSON": 72,
+   "PHONE": 72,
+   "EMAIL": 48,
+   "DOB": 72,
+   "IP_ADDRESS": 72,
+   "CREDIT_CARD": 24,
+   "SSN": 48,
+   "ADDRESS": 24,
+   "ORG": 48
+  },
+  "regex": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.8696,
+      "recall": 0.8333,
+      "f1": 0.8511,
+      "tp": 20,
+      "fp": 3,
+      "fn": 4
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5,
+      "tp": 16,
+      "fp": 0,
+      "fn": 32
+     },
+     "strict": {
+      "precision": 0.875,
+      "recall": 0.2917,
+      "f1": 0.4375,
+      "tp": 14,
+      "fp": 2,
+      "fn": 34
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 72
+     },
+     "strict": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 72
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9722,
+      "f1": 0.9859,
+      "tp": 70,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 0.9286,
+      "recall": 0.9028,
+      "f1": 0.9155,
+      "tp": 65,
+      "fp": 5,
+      "fn": 7
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 1.0,
+     "recall": 0.7771,
+     "f1": 0.8746,
+     "tp": 373,
+     "fp": 0,
+     "fn": 107
+    },
+    "strict": {
+     "precision": 0.9732,
+     "recall": 0.7562,
+     "f1": 0.8511,
+     "tp": 363,
+     "fp": 10,
+     "fn": 117
+    }
+   },
+   "token": {
+    "precision": 0.9768,
+    "recall": 0.7146,
+    "f1": 0.8254,
+    "tp": 631,
+    "fp": 15,
+    "fn": 252,
+    "tn": 2499,
+    "accuracy": 0.9214,
+    "tokens": 3397
+   },
+   "seconds": 0.0,
+   "errors": []
+  },
+  "ner": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.8696,
+      "recall": 0.8333,
+      "f1": 0.8511,
+      "tp": 20,
+      "fp": 3,
+      "fn": 4
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.1532,
+      "recall": 0.3542,
+      "f1": 0.2138,
+      "tp": 17,
+      "fp": 94,
+      "fn": 31
+     },
+     "strict": {
+      "precision": 0.1351,
+      "recall": 0.3125,
+      "f1": 0.1887,
+      "tp": 15,
+      "fp": 96,
+      "fn": 33
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.5133,
+      "recall": 0.8056,
+      "f1": 0.627,
+      "tp": 58,
+      "fp": 55,
+      "fn": 14
+     },
+     "strict": {
+      "precision": 0.4425,
+      "recall": 0.6944,
+      "f1": 0.5405,
+      "tp": 50,
+      "fp": 63,
+      "fn": 22
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9722,
+      "f1": 0.9859,
+      "tp": 70,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 0.9286,
+      "recall": 0.9028,
+      "f1": 0.9155,
+      "tp": 65,
+      "fp": 5,
+      "fn": 7
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.7435,
+     "recall": 0.9,
+     "f1": 0.8143,
+     "tp": 432,
+     "fp": 149,
+     "fn": 48
+    },
+    "strict": {
+     "precision": 0.7126,
+     "recall": 0.8625,
+     "f1": 0.7804,
+     "tp": 414,
+     "fp": 167,
+     "fn": 66
+    }
+   },
+   "token": {
+    "precision": 0.8207,
+    "recall": 0.923,
+    "f1": 0.8689,
+    "tp": 815,
+    "fp": 178,
+    "fn": 68,
+    "tn": 2336,
+    "accuracy": 0.9276,
+    "tokens": 3397
+   },
+   "seconds": 1.0,
+   "errors": []
+  },
+  "hybrid": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.8696,
+      "recall": 0.8333,
+      "f1": 0.8511,
+      "tp": 20,
+      "fp": 3,
+      "fn": 4
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.8889,
+      "recall": 0.3333,
+      "f1": 0.4848,
+      "tp": 16,
+      "fp": 2,
+      "fn": 32
+     },
+     "strict": {
+      "precision": 0.7778,
+      "recall": 0.2917,
+      "f1": 0.4242,
+      "tp": 14,
+      "fp": 4,
+      "fn": 34
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.9067,
+      "recall": 0.9444,
+      "f1": 0.9252,
+      "tp": 68,
+      "fp": 7,
+      "fn": 4
+     },
+     "strict": {
+      "precision": 0.8933,
+      "recall": 0.9306,
+      "f1": 0.9116,
+      "tp": 67,
+      "fp": 8,
+      "fn": 5
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9722,
+      "f1": 0.9859,
+      "tp": 70,
+      "fp": 0,
+      "fn": 2
+     },
+     "strict": {
+      "precision": 0.9286,
+      "recall": 0.9028,
+      "f1": 0.9155,
+      "tp": 65,
+      "fp": 5,
+      "fn": 7
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.98,
+     "recall": 0.9187,
+     "f1": 0.9484,
+     "tp": 441,
+     "fp": 9,
+     "fn": 39
+    },
+    "strict": {
+     "precision": 0.9556,
+     "recall": 0.8958,
+     "f1": 0.9247,
+     "tp": 430,
+     "fp": 20,
+     "fn": 50
+    }
+   },
+   "token": {
+    "precision": 0.9799,
+    "recall": 0.8822,
+    "f1": 0.9285,
+    "tp": 779,
+    "fp": 16,
+    "fn": 104,
+    "tn": 2498,
+    "accuracy": 0.9647,
+    "tokens": 3397
+   },
+   "seconds": 0.4,
+   "errors": [
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Thomas",
+     "context": "Please ship the replacement to H.No. 91, Mittal Path, Rohtak-683255. Company: Medina, Roberts and Thomas.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Medina, Roberts and Thomas",
+     "context": "Please ship the replacement to H.No. 91, Mittal Path, Rohtak-683255. Company: Medina, Roberts and Thomas.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Thakkar, Sahota and Bir",
+     "context": "Regards, Friedrich-Karl Juncken-Ullmann, Thakkar, Sahota and Bir",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Pena, Gilbert and Middleton",
+     "context": "Please ship the replacement to H.No. 186, Bir Road, Kharagpur 321925. Company: Pena, Gilbert and Middleton.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Smith",
+     "context": "Please ship the replacement to 94/813, Shenoy Ganj, Gulbarga 994703. Company: Stewart, Barrett and Smith.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Stewart, Barrett and Smith",
+     "context": "Please ship the replacement to 94/813, Shenoy Ganj, Gulbarga 994703. Company: Stewart, Barrett and Smith.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Iyengar-Nagi",
+     "context": "Regards, Pratyush Sridhar, Iyengar-Nagi",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "4644615886",
+     "context": "Callback number: (329) 564-7804. Alternate line 4644615886.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Kunda, Batra and Deep",
+     "context": "Regards, Meghana Ramanathan, Kunda, Batra and Deep",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Sims, Young and Compton",
+     "context": "Please ship the replacement to 55696 Eric Summit Apt. 645, West Josephmouth, KS 19553. Company: Sims, Young an",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Ghose-Sant",
+     "context": "Regards, Nina Wunderink, Ghose-Sant",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "April",
+     "context": "Order #39141699 was shipped on April 1, 2002. Ticket TKT-700445 is resolved.",
+     "note": "not PII"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Williams",
+     "context": "Please ship the replacement to 55, Baria Nagar, Nanded-339069. Company: Williams-Pierce.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Williams-Pierce",
+     "context": "Please ship the replacement to 55, Baria Nagar, Nanded-339069. Company: Williams-Pierce.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Mani-Brahmbhatt",
+     "context": "Regards, Matthew Khare, Mani-Brahmbhatt",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Dara",
+     "context": "Regards, Yash Pradhan, Dara, Bali and Shan",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Dara, Bali and Shan",
+     "context": "Regards, Yash Pradhan, Dara, Bali and Shan",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Evi de Jong",
+     "context": "Customer Evi de Jong (DOB: 04-Nov-1974) reported a login failure from IP 147.193.220.68.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ADDRESS",
+     "text": "PSC 6082, Box 4456, APO AE 62966",
+     "context": "Please ship the replacement to PSC 6082, Box 4456, APO AE 62966. Company: Stevens, Nelson and Gomez.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Stevens, Nelson and Gomez",
+     "context": "Please ship the replacement to PSC 6082, Box 4456, APO AE 62966. Company: Stevens, Nelson and Gomez.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Sur, Ramaswamy and Kaur",
+     "context": "Regards, Raymond Fabre, Sur, Ramaswamy and Kaur",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Nazareth, Kara and Vora",
+     "context": "Regards, Timothy Roy, Nazareth, Kara and Vora",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "0797834801",
+     "context": "Callback number: +91 9686338634. Alternate line 0797834801.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Advaith Dhar",
+     "context": "Regards, Advaith Dhar, Magar, Goda and Randhawa",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Magar, Goda and Randhawa",
+     "context": "Regards, Advaith Dhar, Magar, Goda and Randhawa",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Deshmukh-Bhasin",
+     "context": "Regards, Monique Marty, Deshmukh-Bhasin",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Garcia",
+     "context": "Please ship the replacement to 33279 Kennedy Via, South William, MN 04573. Company: Miller, Garcia and Robinso",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Miller, Garcia and Robinson",
+     "context": "Please ship the replacement to 33279 Kennedy Via, South William, MN 04573. Company: Miller, Garcia and Robinso",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Lad, Luthra and Sha",
+     "context": "Regards, Anika Wason, Lad, Luthra and Sha",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "King, Stevens and Gutierrez",
+     "context": "Please ship the replacement to 61994 Simmons Ridges Suite 398, New Robert, AZ 73313. Company: King, Stevens an",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Lall-Arora",
+     "context": "Regards, Laura Howard, Lall-Arora",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Johnson",
+     "context": "Please ship the replacement to 3111 Yolanda Well, Johnsonmouth, MP 74143. Company: Johnson, Townsend and Mitch",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Johnson, Townsend and Mitchell",
+     "context": "Please ship the replacement to 3111 Yolanda Well, Johnsonmouth, MP 74143. Company: Johnson, Townsend and Mitch",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Fabi\u00ebnne van Goerle-Timmermans",
+     "context": "Regards, Fabi\u00ebnne van Goerle-Timmermans, Hans-Dubey",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Hans-Dubey",
+     "context": "Regards, Fabi\u00ebnne van Goerle-Timmermans, Hans-Dubey",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Johnson",
+     "context": "Please ship the replacement to 3325 Brown Route Apt. 948, New Michaelbury, VA 36683. Company: Reid-Johnson.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Reid-Johnson",
+     "context": "Please ship the replacement to 3325 Brown Route Apt. 948, New Michaelbury, VA 36683. Company: Reid-Johnson.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Tate-Gonzalez",
+     "context": "Please ship the replacement to 95680 Chad Brook Apt. 520, South Bretttown, OR 14686. Company: Tate-Gonzalez.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Anand-Sankaran",
+     "context": "Regards, Willibert Ruppert, Anand-Sankaran",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Sarkar-Kannan",
+     "context": "Regards, Azad Garde, Sarkar-Kannan",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Long, Valenzuela and Harris",
+     "context": "Please ship the replacement to 121 Allison Key Suite 070, East Davidside, MO 90898. Company: Long, Valenzuela ",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Deshmukh, Krish and Dugar",
+     "context": "Regards, Veer Muni, Deshmukh, Krish and Dugar",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Paul du Martineau",
+     "context": "Customer Paul du Martineau (DOB: July 20, 1999) reported a login failure from IP 208.205.26.203.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Odom, Roberts and Bradley",
+     "context": "Please ship the replacement to 36/22, Barad, Eluru 316452. Company: Odom, Roberts and Bradley.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Thaman",
+     "context": "Regards, Sandra Szlufik, Chopra, Vig and Thaman",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Chopra, Vig and Thaman",
+     "context": "Regards, Sandra Szlufik, Chopra, Vig and Thaman",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Bond-Robinson",
+     "context": "Please ship the replacement to 692 Edwards Parks, North Jacqueline, VA 20590. Company: Bond-Robinson.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Keer, Sankar and Hayre",
+     "context": "Regards, Eileen James, Keer, Sankar and Hayre",
+     "note": "missed entirely"
+    }
+   ]
+  }
+ },
+ "synth_test": {
+  "items": 336,
+  "gold_spans": 480,
+  "gold_by_label": {
+   "PERSON": 72,
+   "PHONE": 72,
+   "EMAIL": 48,
+   "DOB": 72,
+   "IP_ADDRESS": 72,
+   "CREDIT_CARD": 24,
+   "SSN": 48,
+   "ADDRESS": 24,
+   "ORG": 48
+  },
+  "regex": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.913,
+      "recall": 0.875,
+      "f1": 0.8936,
+      "tp": 21,
+      "fp": 2,
+      "fn": 3
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.3542,
+      "f1": 0.5231,
+      "tp": 17,
+      "fp": 0,
+      "fn": 31
+     },
+     "strict": {
+      "precision": 0.9412,
+      "recall": 0.3333,
+      "f1": 0.4923,
+      "tp": 16,
+      "fp": 1,
+      "fn": 32
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 72
+     },
+     "strict": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 72
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9444,
+      "f1": 0.9714,
+      "tp": 68,
+      "fp": 0,
+      "fn": 4
+     },
+     "strict": {
+      "precision": 0.9412,
+      "recall": 0.8889,
+      "f1": 0.9143,
+      "tp": 64,
+      "fp": 4,
+      "fn": 8
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 1.0,
+     "recall": 0.775,
+     "f1": 0.8732,
+     "tp": 372,
+     "fp": 0,
+     "fn": 108
+    },
+    "strict": {
+     "precision": 0.9812,
+     "recall": 0.7604,
+     "f1": 0.8568,
+     "tp": 365,
+     "fp": 7,
+     "fn": 115
+    }
+   },
+   "token": {
+    "precision": 0.985,
+    "recall": 0.7286,
+    "f1": 0.8376,
+    "tp": 655,
+    "fp": 10,
+    "fn": 244,
+    "tn": 2514,
+    "accuracy": 0.9258,
+    "tokens": 3423
+   },
+   "seconds": 0.0,
+   "errors": []
+  },
+  "ner": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.913,
+      "recall": 0.875,
+      "f1": 0.8936,
+      "tp": 21,
+      "fp": 2,
+      "fn": 3
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.127,
+      "recall": 0.3333,
+      "f1": 0.1839,
+      "tp": 16,
+      "fp": 110,
+      "fn": 32
+     },
+     "strict": {
+      "precision": 0.1111,
+      "recall": 0.2917,
+      "f1": 0.1609,
+      "tp": 14,
+      "fp": 112,
+      "fn": 34
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.5856,
+      "recall": 0.9028,
+      "f1": 0.7104,
+      "tp": 65,
+      "fp": 46,
+      "fn": 7
+     },
+     "strict": {
+      "precision": 0.4685,
+      "recall": 0.7222,
+      "f1": 0.5683,
+      "tp": 52,
+      "fp": 59,
+      "fn": 20
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9444,
+      "f1": 0.9714,
+      "tp": 68,
+      "fp": 0,
+      "fn": 4
+     },
+     "strict": {
+      "precision": 0.9412,
+      "recall": 0.8889,
+      "f1": 0.9143,
+      "tp": 64,
+      "fp": 4,
+      "fn": 8
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.7365,
+     "recall": 0.9083,
+     "f1": 0.8134,
+     "tp": 436,
+     "fp": 156,
+     "fn": 44
+    },
+    "strict": {
+     "precision": 0.701,
+     "recall": 0.8646,
+     "f1": 0.7743,
+     "tp": 415,
+     "fp": 177,
+     "fn": 65
+    }
+   },
+   "token": {
+    "precision": 0.8105,
+    "recall": 0.9277,
+    "f1": 0.8651,
+    "tp": 834,
+    "fp": 195,
+    "fn": 65,
+    "tn": 2329,
+    "accuracy": 0.924,
+    "tokens": 3423
+   },
+   "seconds": 1.0,
+   "errors": []
+  },
+  "hybrid": {
+   "per_label": {
+    "ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+     },
+     "strict": {
+      "precision": 0.913,
+      "recall": 0.875,
+      "f1": 0.8936,
+      "tp": 21,
+      "fp": 2,
+      "fn": 3
+     }
+    },
+    "CREDIT_CARD": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "DOB": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "EMAIL": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "IP_ADDRESS": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 72,
+      "fp": 0,
+      "fn": 0
+     }
+    },
+    "ORG": {
+     "relaxed": {
+      "precision": 0.8095,
+      "recall": 0.3542,
+      "f1": 0.4928,
+      "tp": 17,
+      "fp": 4,
+      "fn": 31
+     },
+     "strict": {
+      "precision": 0.7619,
+      "recall": 0.3333,
+      "f1": 0.4638,
+      "tp": 16,
+      "fp": 5,
+      "fn": 32
+     }
+    },
+    "PERSON": {
+     "relaxed": {
+      "precision": 0.9178,
+      "recall": 0.9306,
+      "f1": 0.9241,
+      "tp": 67,
+      "fp": 6,
+      "fn": 5
+     },
+     "strict": {
+      "precision": 0.9178,
+      "recall": 0.9306,
+      "f1": 0.9241,
+      "tp": 67,
+      "fp": 6,
+      "fn": 5
+     }
+    },
+    "PHONE": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 0.9444,
+      "f1": 0.9714,
+      "tp": 68,
+      "fp": 0,
+      "fn": 4
+     },
+     "strict": {
+      "precision": 0.9412,
+      "recall": 0.8889,
+      "f1": 0.9143,
+      "tp": 64,
+      "fp": 4,
+      "fn": 8
+     }
+    },
+    "SSN": {
+     "relaxed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     },
+     "strict": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0
+     }
+    }
+   },
+   "micro": {
+    "relaxed": {
+     "precision": 0.9777,
+     "recall": 0.9146,
+     "f1": 0.9451,
+     "tp": 439,
+     "fp": 10,
+     "fn": 41
+    },
+    "strict": {
+     "precision": 0.9621,
+     "recall": 0.9,
+     "f1": 0.93,
+     "tp": 432,
+     "fp": 17,
+     "fn": 48
+    }
+   },
+   "token": {
+    "precision": 0.9877,
+    "recall": 0.8954,
+    "f1": 0.9393,
+    "tp": 805,
+    "fp": 10,
+    "fn": 94,
+    "tn": 2514,
+    "accuracy": 0.9696,
+    "tokens": 3423
+   },
+   "seconds": 0.5,
+   "errors": [
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Jackson",
+     "context": "Please ship the replacement to 556, Deep Marg, Purnia-620713. Company: Parker, Jackson and Guzman.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Parker, Jackson and Guzman",
+     "context": "Please ship the replacement to 556, Deep Marg, Purnia-620713. Company: Parker, Jackson and Guzman.",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "03664849985",
+     "context": "Callback number: 03664849985. Alternate line +913268709355.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Badami-Loyal",
+     "context": "Regards, Henrike D\u00f6hn-Heintze, Badami-Loyal",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Brahmbhatt, Brar and Prashad",
+     "context": "Regards, Meera Dora, Brahmbhatt, Brar and Prashad",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Morales, Marks and Fry",
+     "context": "Please ship the replacement to 09, Trivedi Road, Khammam-611030. Company: Morales, Marks and Fry.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "2974699787",
+     "context": "Callback number: 463-935-7148x33440. Alternate line 2974699787.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Suzanne de Benoit",
+     "context": "Customer Suzanne de Benoit (DOB: October 10, 1974) reported a login failure from IP 45f7:476c:3d28:f524:253:e9",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Aurora Street",
+     "context": "Please ship the replacement to 13/667, Aurora Street, Pali 080119. Company: Watson-Peterson.",
+     "note": "overlaps gold ADDRESS"
+    },
+    {
+     "kind": "FN",
+     "label": "ADDRESS",
+     "text": "13/667, Aurora Street, Pali 080119",
+     "context": "Please ship the replacement to 13/667, Aurora Street, Pali 080119. Company: Watson-Peterson.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Watson-Peterson",
+     "context": "Please ship the replacement to 13/667, Aurora Street, Pali 080119. Company: Watson-Peterson.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Maharaj, Halder and Bath",
+     "context": "Regards, Tygo Veenendaal, Maharaj, Halder and Bath",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Ravel-Muni",
+     "context": "Regards, Nancy Clark, Ravel-Muni",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "pan Tymon Bujko",
+     "context": "Regards, pan Tymon Bujko, Ratta, Sant and Oza",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Ratta, Sant and Oza",
+     "context": "Regards, pan Tymon Bujko, Ratta, Sant and Oza",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Baker",
+     "context": "Please ship the replacement to 553, Subramaniam Marg, Begusarai 763737. Company: Ramsey, Leon and Baker.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Ramsey, Leon and Baker",
+     "context": "Please ship the replacement to 553, Subramaniam Marg, Begusarai 763737. Company: Ramsey, Leon and Baker.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Choudhury-Banik",
+     "context": "Regards, Ashleigh Scott, Choudhury-Banik",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Smith",
+     "context": "Please ship the replacement to 79380 Edward Fords Apt. 838, Port Markshire, LA 40357. Company: Aguilar, Sanche",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Aguilar, Sanchez and Smith",
+     "context": "Please ship the replacement to 79380 Edward Fords Apt. 838, Port Markshire, LA 40357. Company: Aguilar, Sanche",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Badal-Patla",
+     "context": "Regards, Miss Debra Bruce, Badal-Patla",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "pani Tola Szybiak",
+     "context": "Customer pani Tola Szybiak (DOB: November 3, 1951) reported a login failure from IP 6170:53a9:d1ae:fea6:6760:a",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Kumar, Taneja and Taneja",
+     "context": "Regards, Margot Techer, Kumar, Taneja and Taneja",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Sanchez, Mcpherson and Cameron",
+     "context": "Please ship the replacement to 72477 John Brooks Apt. 268, Starkton, MS 44953. Company: Sanchez, Mcpherson and",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Baria, Issac and Tailor",
+     "context": "Regards, Kayleigh Thompson-Brookes, Baria, Issac and Tailor",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Vargas-Waters",
+     "context": "Please ship the replacement to 83/78, Kalita Zila, Sirsa-905752. Company: Vargas-Waters.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Bora",
+     "context": "Regards, Marion Khan, Saxena, Nanda and Bora",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Saxena, Nanda and Bora",
+     "context": "Regards, Marion Khan, Saxena, Nanda and Bora",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Reilly-Manning",
+     "context": "Please ship the replacement to H.No. 496, Mohan Circle, Ramagundam-357098. Company: Reilly-Manning.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Mitter-Wagle",
+     "context": "Regards, Frieder Kroker, Mitter-Wagle",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Martin",
+     "context": "Customer Jodie Williams-Martin (DOB: 29 October 1969) reported a login failure from IP 136.154.85.125.",
+     "note": "overlaps gold PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Jodie Williams-Martin",
+     "context": "Customer Jodie Williams-Martin (DOB: 29 October 1969) reported a login failure from IP 136.154.85.125.",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Anderson, Lewis and Meyer",
+     "context": "Please ship the replacement to 11, More Road, Mumbai 731581. Company: Anderson, Lewis and Meyer.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Choudhry, Prashad and Pingle",
+     "context": "Regards, Miss Fiona Matthews, Choudhry, Prashad and Pingle",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "5742037316",
+     "context": "Callback number: (381) 799-2450. Alternate line 5742037316.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Din, Bhatti and Sankar",
+     "context": "Regards, Simon Davies, Din, Bhatti and Sankar",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Scott",
+     "context": "Please ship the replacement to 706, Som Circle, Bhilai-938710. Company: Scott, Davis and Gregory.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FP",
+     "label": "PERSON",
+     "text": "Davis",
+     "context": "Please ship the replacement to 706, Som Circle, Bhilai-938710. Company: Scott, Davis and Gregory.",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Scott, Davis and Gregory",
+     "context": "Please ship the replacement to 706, Som Circle, Bhilai-938710. Company: Scott, Davis and Gregory.",
+     "note": "predicted as PERSON"
+    },
+    {
+     "kind": "FN",
+     "label": "PHONE",
+     "text": "4477815186",
+     "context": "Callback number: 4477815186. Alternate line (455) 384-9074.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Acharya-Ray",
+     "context": "Regards, F\u00e9line Westerbeek, Acharya-Ray",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Chacko-Kalla",
+     "context": "Regards, Shaurya Dayal, Chacko-Kalla",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Gordon-Fisher",
+     "context": "Please ship the replacement to 61834 Jeremy Curve Suite 994, East Rachel, MS 88058. Company: Gordon-Fisher.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Din-Bawa",
+     "context": "Regards, Jay Davis, Din-Bawa",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "PERSON",
+     "text": "Jos\u00e9 de Zabala",
+     "context": "Hi, this is Jos\u00e9 de Zabala. Please call me on +91 9902763777 or write to smithdiane@example.com.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Medina-Blackburn",
+     "context": "Please ship the replacement to 77, Bora Ganj, Gangtok 888528. Company: Medina-Blackburn.",
+     "note": "missed entirely"
+    },
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Kothari",
+     "context": "Regards, Nathan Rek-Broeders, Kothari, Dubey and Kannan",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Kothari, Dubey and Kannan",
+     "context": "Regards, Nathan Rek-Broeders, Kothari, Dubey and Kannan",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FP",
+     "label": "ORG",
+     "text": "Johnson",
+     "context": "Please ship the replacement to 1258 Cooper Unions Apt. 468, Port Michael, GU 76457. Company: Johnson, Reed and",
+     "note": "overlaps gold ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Johnson, Reed and Carrillo",
+     "context": "Please ship the replacement to 1258 Cooper Unions Apt. 468, Port Michael, GU 76457. Company: Johnson, Reed and",
+     "note": "predicted as ORG"
+    },
+    {
+     "kind": "FN",
+     "label": "ORG",
+     "text": "Chada-Nagar",
+     "context": "Regards, Arin Manne, Chada-Nagar",
+     "note": "missed entirely"
+    }
+   ]
+  }
+ },
+ "synth_test_person_by_pool": {
+  "out": {
+   "recall": 0.8333,
+   "n": 24
+  },
+  "in": {
+   "recall": 0.9792,
+   "n": 48
+  }
+ },
+ "end_to_end": {
+  "leak": {
+   "dev": {
+    "gold_spans": 86,
+    "leaked": 3,
+    "leak_rate": 0.0349,
+    "leaked_examples": [
+     [
+      2396,
+      "Al-Ahleia Switchgear Co.",
+      "ORG"
+     ],
+     [
+      4294,
+      "Lodha I Think Techno Campus, O-3 Level",
+      "ADDRESS"
+     ],
+     [
+      4397,
+      "3rd Floor, 362, Satguru House Next to Tanishq Showroom, CTS No. 30",
+      "ADDRESS"
+     ]
+    ]
+   },
+   "test": {
+    "gold_spans": 44,
+    "leaked": 1,
+    "leak_rate": 0.0227,
+    "leaked_examples": [
+     [
+      4086,
+      "Pune 411 045 Maharashtra, India",
+      "ADDRESS"
+     ]
+    ]
+   }
+  },
+  "entities_replaced": 849,
+  "by_label": {
+   "ORG": 271,
+   "ID_NUMBER": 24,
+   "ADDRESS": 54,
+   "PERSON": 216,
+   "EMAIL": 104,
+   "PHONE": 36,
+   "URL": 107,
+   "LOCALITY": 37
+  },
+  "inconsistent_mappings": 0,
+  "unchanged_replacements": 0,
+  "format_preserved": "164/164",
+  "seconds": 5.9,
+  "cleaning": {
+   "invisible_chars_removed": 0,
+   "non_breaking_spaces_fixed": 0,
+   "repeated_spaces_collapsed": 14
+  }
+ }
+}

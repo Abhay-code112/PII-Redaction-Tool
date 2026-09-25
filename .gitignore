@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# the audit log contains the ORIGINAL PII, never publish it
+output/audit*.json
+eval/results_private*.json
+# the raw input document is not part of the repo
+*.docx
+!output/*.docx
+.DS_Store

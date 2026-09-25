@@ -1,0 +1,4442 @@
+[
+ {
+  "text": "Hi, this is Fito Pedrero Llorens. Please call me on (815) 836-7891 or write to nallen@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 32,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 52,
+    "end": 66,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 79,
+    "end": 97,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Olav Radisch (DOB: 1957-03-30) reported a login failure from IP 70.70.122.78.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 28,
+    "end": 38,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 85,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 30075364556817. Cardholder SSN 741-44-1470.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 38,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 55,
+    "end": 66,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to H.No. 91, Mittal Path, Rohtak-683255. Company: Medina, Roberts and Thomas.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 67,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 104,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on December 26, 1993. Contact mitalisetty@gade-sidhu.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 25,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 35,
+    "end": 61,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (457) 556-6843. Alternate line +91 6876435574.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 203.77.33.57 rejected the request from 7854:9014:6ded:c86a:9f4f:b02c:b7a1:774f.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 19,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 46,
+    "end": 85,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 146623751. Date of birth October 21, 2001.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 73,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Friedrich-Karl Juncken-Ullmann, Thakkar, Sahota and Bir",
+  "pii": [
+   {
+    "start": 9,
+    "end": 39,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 41,
+    "end": 64,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #59505484 was shipped on 13 August 1982. Ticket TKT-542727 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 1698716897684697 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 9.76.1.83 fixes the crash. Reference INV-2021-3113, batch 155053458621.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 3879702798 confirmed; parcel weight 23.9 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 539.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Victor Kalla. Please call me on (434) 324-8484 or write to rharris@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 71,
+    "end": 90,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Lindsey Day (DOB: December 14, 1998) reported a login failure from IP 93.83.153.61.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 27,
+    "end": 44,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 79,
+    "end": 91,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 1800-5347-7876-800. Cardholder SSN 852-38-5189.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 42,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 59,
+    "end": 70,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 8472 Kirby Neck, Lake Josephfort, MN 13170. Company: Adkins Group.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 73,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 84,
+    "end": 96,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 06-Mar-1999. Contact geetikasethi@dayal.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 51,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9964248673. Alternate line (233) 353-8507.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 7.200.171.150 rejected the request from 146.154.128.236.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 62,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 087542624. Date of birth 25 July 1993.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 69,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Miss Amanda Lynch, Kala LLC",
+  "pii": [
+   {
+    "start": 9,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 28,
+    "end": 36,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #76727300 was shipped on 15-Dec-1988. Ticket TKT-796147 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 0457178472671475 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 2.34.7.28 fixes the crash. Reference INV-2023-1229, batch 100395861254.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 4592117768 confirmed; parcel weight 20.3 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 353.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Rachel Herman. Please call me on 3114762472 or write to johnsonthomas@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 45,
+    "end": 55,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 68,
+    "end": 93,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Gabriel Martinez (DOB: 13-Feb-1978) reported a login failure from IP 200.174.212.202.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 32,
+    "end": 43,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 93,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4695 7931 8603 2084. Cardholder SSN 860-07-7403.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 0283 Ethan Vista, South Joshua, ND 54776. Company: Reyes and Sons.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 71,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 82,
+    "end": 96,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 06-Feb-1962. Contact priya45@wadhwa.net for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 47,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 7607862197. Alternate line +91 6548586715.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 45.219.212.217 rejected the request from 81.243.65.253.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 570979307. Date of birth 30-Apr-1963.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Laura Hart, Kar LLC",
+  "pii": [
+   {
+    "start": 9,
+    "end": 19,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 21,
+    "end": 28,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #60466696 was shipped on 1951-04-09. Ticket TKT-508260 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 9229836957931860 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 4.92.3.15 fixes the crash. Reference INV-2025-9925, batch 594128202623.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 3752441525 confirmed; parcel weight 16.0 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 232.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Liz Lieshout. Please call me on 01070206934 or write to carterleonard@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 44,
+    "end": 55,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 68,
+    "end": 93,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Isaura Ferrán Giralt (DOB: 29-Feb-1988) reported a login failure from IP 120.28.104.39.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 29,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 36,
+    "end": 47,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 82,
+    "end": 95,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 6560013041189558. Cardholder SSN 799-59-9950.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to H.No. 186, Bir Road, Kharagpur 321925. Company: Pena, Gilbert and Middleton.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 68,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 79,
+    "end": 106,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on October 18, 1966. Contact trai@batta.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 24,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 34,
+    "end": 48,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 7382870507. Alternate line (533) 731-8897.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 1e47:caa6:1f68:4c50:9e74:d651:2980:f7bd rejected the request from 86.168.154.30.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 46,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 86,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 612834952. Date of birth 1974-07-26.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Renée Weber, Taneja Inc",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 22,
+    "end": 32,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #41049233 was shipped on 1950-06-10. Ticket TKT-576172 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 5682052589831948 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 4.82.5.82 fixes the crash. Reference INV-2022-3172, batch 959429208275.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 2132637511 confirmed; parcel weight 14.2 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 208.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Denise Johnson. Please call me on 8695256663 or write to isaiahjohnson@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 46,
+    "end": 56,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 69,
+    "end": 94,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Ruth Walker (DOB: February 17, 1978) reported a login failure from IP 207.44.196.27.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 27,
+    "end": 44,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 79,
+    "end": 92,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4300487645291280844. Cardholder SSN 349-82-8528.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 94/813, Shenoy Ganj, Gulbarga 994703. Company: Stewart, Barrett and Smith.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 67,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 104,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 23/03/1978. Contact kdyal@halder.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 44,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 8375011139. Alternate line 555.477.8794.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 60,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 137.215.134.142 rejected the request from f350:31ce:15c:1d5c:e4cf:ed0f:7c1f:9183.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 22,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 49,
+    "end": 87,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 363676691. Date of birth 06-May-2000.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Pratyush Sridhar, Iyengar-Nagi",
+  "pii": [
+   {
+    "start": 9,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 27,
+    "end": 39,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #52275152 was shipped on 30-Nov-1990. Ticket TKT-756123 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 9065939761584645 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 1.65.1.46 fixes the crash. Reference INV-2025-6415, batch 900107549288.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 5820307225 confirmed; parcel weight 25.6 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 426.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Martyn George. Please call me on 2215458421 or write to ashley66@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 45,
+    "end": 55,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 68,
+    "end": 88,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Kellie Schneider (DOB: 1961-01-03) reported a login failure from IP 1adc:2207:823e:3122:f714:c463:2875:9158.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 32,
+    "end": 42,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 77,
+    "end": 116,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 5565-8440-9324-4843. Cardholder SSN 366-18-6368.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to H.No. 26, Jani Circle, Haridwar-774559. Company: Cherry Ltd.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 69,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 80,
+    "end": 90,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 1977-02-11. Contact chahalbaljiwan@dash.info for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 52,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (329) 564-7804. Alternate line 4644615886.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 114.119.181.190 rejected the request from 2063:e843:3f87:175d:9c2a:2dc1:9978:98f0.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 22,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 49,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 109427940. Date of birth 26-Jul-1998.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Meghana Ramanathan, Kunda, Batra and Deep",
+  "pii": [
+   {
+    "start": 9,
+    "end": 27,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 29,
+    "end": 50,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #44222072 was shipped on 02/04/1963. Ticket TKT-124496 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 0487645291280845 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 9.50.1.94 fixes the crash. Reference INV-2026-1186, batch 616438921504.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 9039007922 confirmed; parcel weight 23.5 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 909.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Thibaut Léger. Please call me on (405) 583-6883 or write to mariasutton@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 45,
+    "end": 59,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 72,
+    "end": 95,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Damian Torbus (DOB: 27 March 1999) reported a login failure from IP 219.11.54.218.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 29,
+    "end": 42,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 77,
+    "end": 90,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 5317-4432-5688-5574. Cardholder SSN 413-41-2896.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 55696 Eric Summit Apt. 645, West Josephmouth, KS 19553. Company: Sims, Young and Compton.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 85,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 96,
+    "end": 119,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 10/11/1966. Contact chaudharihardik@deshmukh.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 56,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (696) 205-6807. Alternate line +91 6786245921.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 58.137.44.176 rejected the request from 175.206.187.22.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 872625551. Date of birth 1959-01-15.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Nina Wunderink, Ghose-Sant",
+  "pii": [
+   {
+    "start": 9,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 25,
+    "end": 35,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #39141699 was shipped on April 1, 2002. Ticket TKT-700445 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 0668828112658440 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 4.30.5.47 fixes the crash. Reference INV-2024-5678, batch 247563150533.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 9472914334 confirmed; parcel weight 7.0 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 967.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Oliver Brown. Please call me on 1078783966 or write to petersjacob@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 54,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 67,
+    "end": 90,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Jenna Jackson-Harris (DOB: 1996-04-23) reported a login failure from IP 196.159.145.30.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 29,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 36,
+    "end": 46,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 81,
+    "end": 95,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3473-9241-9689-826. Cardholder SSN 111-04-4439.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 42,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 59,
+    "end": 70,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 55, Baria Nagar, Nanded-339069. Company: Williams-Pierce.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 61,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 72,
+    "end": 87,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 1952-07-20. Contact vsule@rajagopal-cheema.net for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 54,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: 9907993808. Alternate line 8756473548.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 27,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 44,
+    "end": 54,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 112.221.243.225 rejected the request from 161.8.106.21.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 22,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 49,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 744938339. Date of birth 24 July 1956.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 69,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Matthew Khare, Mani-Brahmbhatt",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 24,
+    "end": 39,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #92806254 was shipped on 1977-01-18. Ticket TKT-464693 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 7718835795111744 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 4.31.6.65 fixes the crash. Reference INV-2024-6434, batch 898426304924.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 7413220574 confirmed; parcel weight 11.2 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 301.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Kashvi Hegde. Please call me on (556) 977-6736 or write to katherinemaynard@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 71,
+    "end": 99,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Geoffrey Taylor (DOB: 28/03/1984) reported a login failure from IP 14.32.16.214.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 31,
+    "end": 41,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 76,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4930-7336-8828-3475. Cardholder SSN 140-72-5338.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 983 Catherine Squares Apt. 229, Port Elizabethton, KY 39736. Company: Taylor PLC.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 90,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 101,
+    "end": 111,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 12 June 1961. Contact pushti92@sane.biz for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 20,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 30,
+    "end": 47,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (320) 527-5365. Alternate line +912953049310.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 61,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 17.220.133.169 rejected the request from d805:d62d:9604:bf34:5a5f:ea39:183b:60e5.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 87,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 722904215. Date of birth January 21, 1961.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 73,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Yash Pradhan, Dara, Bali and Shan",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 23,
+    "end": 42,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #87093109 was shipped on 4 February 1991. Ticket TKT-518854 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 0856517883655062 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 1.44.9.99 fixes the crash. Reference INV-2022-3139, batch 737089737666.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 9113986788 confirmed; parcel weight 11.0 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 138.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Stéphane Briand. Please call me on +910826643588 or write to dgriffith@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 27,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 47,
+    "end": 60,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 94,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Evi de Jong (DOB: 04-Nov-1974) reported a login failure from IP 147.193.220.68.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 27,
+    "end": 38,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 87,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4897133115921238. Cardholder SSN 657-56-3102.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to PSC 6082, Box 4456, APO AE 62966. Company: Stevens, Nelson and Gomez.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 63,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 74,
+    "end": 99,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 02-Nov-1966. Contact vrinda60@butala-pandey.info for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 56,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (359) 537-4594. Alternate line 001-241-377-5888x14401.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 70,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 15.61.47.213 rejected the request from 1.197.192.123.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 19,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 46,
+    "end": 59,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 819839421. Date of birth 06-Nov-2002.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Raymond Fabre, Sur, Ramaswamy and Kaur",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 24,
+    "end": 47,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #24503016 was shipped on July 16, 1952. Ticket TKT-539915 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 0288375555974754 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 1.92.8.27 fixes the crash. Reference INV-2020-8875, batch 502906377012.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 8537507772 confirmed; parcel weight 7.5 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 380.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Tom Franklin. Please call me on (423) 795-1887 or write to bonillakaitlyn@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 71,
+    "end": 97,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Kelly Oconnor (DOB: 30-Aug-1995) reported a login failure from IP 218.183.156.107.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 29,
+    "end": 40,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 75,
+    "end": 90,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3547 3573 6385 6079. Cardholder SSN 256-77-3020.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 796 Moreno Parks, South Jessica, NC 61504. Company: Phillips PLC.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 72,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 83,
+    "end": 95,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 20-Feb-1958. Contact yochanabora@saraf.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 50,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 8625311624. Alternate line (775) 378-5218.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 74.186.118.135 rejected the request from 204.74.111.0.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 60,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 224919214. Date of birth 1969-04-10.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Timothy Roy, Nazareth, Kara and Vora",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 22,
+    "end": 45,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #42332421 was shipped on 23 October 1968. Ticket TKT-632712 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 8283472855689832 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 9.29.3.26 fixes the crash. Reference INV-2026-2000, batch 833588372809.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 4716951156 confirmed; parcel weight 9.4 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 939.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Jermaine Estrada. Please call me on 5224370312 or write to christine07@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 28,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 48,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 71,
+    "end": 94,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Harinakshi Thaman (DOB: 05/02/1965) reported a login failure from IP 74.185.229.173.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 33,
+    "end": 43,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 92,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 213170853867137. Cardholder SSN 033-02-6775.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 39,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 56,
+    "end": 67,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 9223 Angie Parkways, Ricardoburgh, NH 12614. Company: Cooper Ltd.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 74,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 85,
+    "end": 95,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 19-Feb-1987. Contact wrideshbose@manne.biz for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 50,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9686338634. Alternate line 0797834801.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 58,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 217.184.59.192 rejected the request from ae1e:66a7:9385:38fc:aceb:11b9:983b:ab28.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 87,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 581235028. Date of birth 1995-08-06.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Advaith Dhar, Magar, Goda and Randhawa",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 23,
+    "end": 47,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #11015315 was shipped on 1955-03-22. Ticket TKT-470174 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 9450283166323373 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 6.30.9.64 fixes the crash. Reference INV-2025-7933, batch 874654007394.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 8466409042 confirmed; parcel weight 30.8 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 721.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Rosalinde Mosemann-Kruschwitz. Please call me on +91 7893551778 or write to martinezchloe@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 41,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 61,
+    "end": 75,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 88,
+    "end": 113,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Mehmet Hofman (DOB: 1964-03-07) reported a login failure from IP 108.8.104.220.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 29,
+    "end": 39,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 74,
+    "end": 87,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 5435-7164-7744-7960. Cardholder SSN 481-38-5131.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 61, Mody Chowk, Dehri 924552. Company: Garcia PLC.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 59,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 70,
+    "end": 80,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 1988-05-22. Contact harini43@kar.biz for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 44,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 7795991668. Alternate line +91 9110223693.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 60.240.21.217 rejected the request from 116.213.23.199.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 039953202. Date of birth 1962-05-18.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Monique Marty, Deshmukh-Bhasin",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 24,
+    "end": 39,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #85114513 was shipped on December 20, 1969. Ticket TKT-578168 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 6990854177588814 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 5.14.2.85 fixes the crash. Reference INV-2020-2150, batch 720418497883.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 5762247887 confirmed; parcel weight 26.9 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 567.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Jordan Jones. Please call me on 9132197065 or write to sperez@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 54,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 67,
+    "end": 85,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Sierra Meza (DOB: 8 June 1959) reported a login failure from IP aa32:659b:cd12:59e2:491b:1090:82c8:7b83.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 27,
+    "end": 38,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 112,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3556-8306-8669-5380. Cardholder SSN 599-49-5837.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 33279 Kennedy Via, South William, MN 04573. Company: Miller, Garcia and Robinson.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 73,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 84,
+    "end": 111,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 1951-08-21. Contact rachana49@setty-padmanabhan.net for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 59,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 6908075560. Alternate line (682) 447-6279.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 135.249.174.230 rejected the request from 79.38.7.4.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 22,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 49,
+    "end": 58,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 153577640. Date of birth February 14, 1996.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 74,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Anika Wason, Lad, Luthra and Sha",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 22,
+    "end": 41,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #15541091 was shipped on 13/11/1993. Ticket TKT-724624 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 2731979678073608 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 8.27.5.40 fixes the crash. Reference INV-2026-9541, batch 393405864215.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 8589147022 confirmed; parcel weight 28.9 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 126.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Rohan Walia. Please call me on +913305342754 or write to colemichael@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 43,
+    "end": 56,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 69,
+    "end": 92,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Chelsea Lamb (DOB: 25-Oct-1956) reported a login failure from IP 198.232.91.232.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 28,
+    "end": 39,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 74,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4148 8361 5202 9940. Cardholder SSN 265-56-1677.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 61994 Simmons Ridges Suite 398, New Robert, AZ 73313. Company: King, Stevens and Gutierrez.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 83,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 94,
+    "end": 121,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 25 June 1959. Contact adviknayar@wagle.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 20,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 30,
+    "end": 50,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9106196918. Alternate line +91 7663415336.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 151.217.38.161 rejected the request from 221.199.90.41.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 774887421. Date of birth 10-Aug-1969.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Laura Howard, Lall-Arora",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 23,
+    "end": 33,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #70048482 was shipped on 1999-04-26. Ticket TKT-472945 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 7803704121430490 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 8.43.2.99 fixes the crash. Reference INV-2025-9954, batch 702015241909.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 6317120352 confirmed; parcel weight 27.0 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 654.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Elodia Quesada Bayo. Please call me on 6956738657 or write to ryan64@example.net.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 31,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 51,
+    "end": 61,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 74,
+    "end": 92,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Jacek Gorlitz (DOB: 5 February 1987) reported a login failure from IP 121.166.97.2.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 29,
+    "end": 44,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 79,
+    "end": 91,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4132 0598 7198 5. Cardholder SSN 529-82-0891.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 3111 Yolanda Well, Johnsonmouth, MP 74143. Company: Johnson, Townsend and Mitchell.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 72,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 83,
+    "end": 113,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 05/01/1966. Contact aryasen@rastogi.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 47,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 7276726217. Alternate line (861) 871-3767.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server f69e:75a3:450d:a734:3112:cdd7:6e04:3667 rejected the request from 180.210.229.221.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 46,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 211422609. Date of birth 09-Sep-1961.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Fabiënne van Goerle-Timmermans, Hans-Dubey",
+  "pii": [
+   {
+    "start": 9,
+    "end": 39,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 41,
+    "end": 51,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #42642841 was shipped on 22/07/1992. Ticket TKT-820068 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 5278120617695851 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 1.93.5.40 fixes the crash. Reference INV-2020-7180, batch 370057533707.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 9346732760 confirmed; parcel weight 20.9 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 796.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Clive Moore. Please call me on 001-340-613-7615x61059 or write to jamesscott@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 43,
+    "end": 65,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 100,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Sachi Grover (DOB: 30 September 1965) reported a login failure from IP 4.227.200.105.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 28,
+    "end": 45,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 80,
+    "end": 93,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 213137852223844. Cardholder SSN 700-16-6396.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 39,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 56,
+    "end": 67,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 3325 Brown Route Apt. 948, New Michaelbury, VA 36683. Company: Reid-Johnson.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 83,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 94,
+    "end": 106,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 11-Apr-1964. Contact xseshadri@patil-prabhu.org for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 55,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9221476936. Alternate line +91 7537777108.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 148.96.147.131 rejected the request from 95.238.47.73.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 21,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 60,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 534535478. Date of birth 14 June 1950.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 69,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Ashleigh Jarvis, Wadhwa Inc",
+  "pii": [
+   {
+    "start": 9,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 26,
+    "end": 36,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #26305740 was shipped on 20/08/1958. Ticket TKT-972359 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 5716477447967452 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 2.88.9.13 fixes the crash. Reference INV-2021-4495, batch 868751583432.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 9569115838 confirmed; parcel weight 8.5 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 269.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Lisa Williams. Please call me on (331) 815-6492 or write to hamiltonsarah@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 25,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 45,
+    "end": 59,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 72,
+    "end": 97,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Amanda Thomas (DOB: April 6, 1999) reported a login failure from IP 153.209.234.212.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 29,
+    "end": 42,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 77,
+    "end": 92,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 2281-4136-3343-7018. Cardholder SSN 040-95-8643.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 2394 Kyle Meadows, Robertochester, OH 57192. Company: Davis Group.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 74,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 85,
+    "end": 96,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on August 27, 1973. Contact kala28@ramachandran.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 23,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 33,
+    "end": 56,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (339)589-9745x358. Alternate line (373) 640-3048.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 34,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 51,
+    "end": 65,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 169.165.36.81 rejected the request from 130.245.247.32.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 283605508. Date of birth 24-Apr-1955.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Eiravati Gera, Jhaveri Limited",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 24,
+    "end": 39,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #14853558 was shipped on 12-Jul-2003. Ticket TKT-453831 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 8463884985568306 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 9.64.7.89 fixes the crash. Reference INV-2022-4997, batch 742351930946.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 6918083335 confirmed; parcel weight 28.0 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 209.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Raymond Devaux-Devaux. Please call me on (702) 832-7448 or write to stacypatrick@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 33,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 53,
+    "end": 67,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 80,
+    "end": 104,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Colette Dumas (DOB: 24-Jan-1989) reported a login failure from IP 201.15.160.36.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 29,
+    "end": 40,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 75,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3504294747818247. Cardholder SSN 824-35-6515.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 95680 Chad Brook Apt. 520, South Bretttown, OR 14686. Company: Tate-Gonzalez.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 83,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 94,
+    "end": 107,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 1959-02-08. Contact sarnazansi@krishnan.org for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 18,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 28,
+    "end": 51,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +1-927-933-0570x304. Alternate line 001-381-266-1146x351.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 36,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 53,
+    "end": 73,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 97.246.110.62 rejected the request from 8.159.120.0.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 58,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 051400092. Date of birth 9 July 1963.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Willibert Ruppert, Anand-Sankaran",
+  "pii": [
+   {
+    "start": 9,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 28,
+    "end": 42,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #35592325 was shipped on 29 September 1999. Ticket TKT-457441 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 8361520299446135 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 2.62.2.83 fixes the crash. Reference INV-2026-5328, batch 569522223910.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 2334769381 confirmed; parcel weight 24.9 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 636.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is April Smith. Please call me on (234) 768-5124 or write to robinmiller@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 43,
+    "end": 57,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 70,
+    "end": 93,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Vasudha Patel (DOB: February 2, 1987) reported a login failure from IP 34.180.61.82.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 29,
+    "end": 45,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 80,
+    "end": 92,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 2131-2977-0579-290. Cardholder SSN 728-80-2778.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 42,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 59,
+    "end": 70,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 337 Mary Oval, New Robertstad, OH 16222. Company: Hess PLC.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 70,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 81,
+    "end": 89,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on August 15, 1964. Contact yatan67@palla.org for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 23,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 33,
+    "end": 50,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +1-214-870-6755x485. Alternate line (635)316-7682x5973.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 36,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 53,
+    "end": 71,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 71.152.31.14 rejected the request from 21.39.63.48.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 19,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 46,
+    "end": 57,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 386343674. Date of birth 25-Jan-1988.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Azad Garde, Sarkar-Kannan",
+  "pii": [
+   {
+    "start": 9,
+    "end": 19,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 21,
+    "end": 34,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #91702105 was shipped on 1983-10-06. Ticket TKT-490729 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 6795965056547056 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 8.15.1.47 fixes the crash. Reference INV-2024-9924, batch 159241448971.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 6715993448 confirmed; parcel weight 9.6 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 407.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Valerie Shaw. Please call me on 001-666-428-2909x2082 or write to anthonycarter@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 44,
+    "end": 65,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 78,
+    "end": 103,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Danny Mcdonald (DOB: 1965-11-03) reported a login failure from IP 192.238.178.125.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 30,
+    "end": 40,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 75,
+    "end": 90,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3552-6956-3782-7604. Cardholder SSN 659-66-2188.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 121 Allison Key Suite 070, East Davidside, MO 90898. Company: Long, Valenzuela and Harris.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 82,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 93,
+    "end": 120,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 03-Apr-1959. Contact advika76@mandal.biz for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 48,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +910738660441. Alternate line (268) 307-2176.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 30,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 61,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 4523:831c:dc00:4373:e84b:6e4a:c32f:b1e0 rejected the request from 117.218.196.233.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 46,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 73,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 075545551. Date of birth 2000-05-28.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Veer Muni, Deshmukh, Krish and Dugar",
+  "pii": [
+   {
+    "start": 9,
+    "end": 18,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 20,
+    "end": 45,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #64888845 was shipped on 15-Apr-1983. Ticket TKT-809273 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 2401376156105914 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 9.38.4.53 fixes the crash. Reference INV-2022-2520, batch 689714622609.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 3414895690 confirmed; parcel weight 27.8 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 174.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Laetitia Duval. Please call me on +912052058142 or write to danieljones@example.org.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 46,
+    "end": 59,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 72,
+    "end": 95,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Paul du Martineau (DOB: July 20, 1999) reported a login failure from IP 208.205.26.203.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 26,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 33,
+    "end": 46,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 81,
+    "end": 95,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 4502 1520 5114 8298. Cardholder SSN 668-33-1914.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 43,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 60,
+    "end": 71,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 36/22, Barad, Eluru 316452. Company: Odom, Roberts and Bradley.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 57,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 68,
+    "end": 93,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on March 31, 1992. Contact dayita94@subramaniam.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 22,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 32,
+    "end": 56,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: (978) 382-6892. Alternate line 787.676.0405x4246.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 65,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 144.97.167.20 rejected the request from 92.159.194.131.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 61,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 441351155. Date of birth April 22, 1970.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 71,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Sandra Szlufik, Chopra, Vig and Thaman",
+  "pii": [
+   {
+    "start": 9,
+    "end": 23,
+    "label": "PERSON",
+    "pool": "out"
+   },
+   {
+    "start": 25,
+    "end": 47,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #95247324 was shipped on January 20, 1953. Ticket TKT-259224 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 4761341461754420 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 2.47.7.21 fixes the crash. Reference INV-2021-4318, batch 696730472961.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 1048666531 confirmed; parcel weight 11.3 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 128.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Cameron Richardson-Hill. Please call me on (459) 710-9533 or write to qramsey@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 35,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 55,
+    "end": 69,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 82,
+    "end": 101,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Natalie Ingram-Roberts (DOB: 30-Dec-1979) reported a login failure from IP 50.55.160.118.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 31,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 38,
+    "end": 49,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 84,
+    "end": 97,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 3557096056433385. Cardholder SSN 477-87-9857.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 53/88, Menon Marg, Thrissur-542279. Company: Price Group.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 65,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 76,
+    "end": 87,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 29 August 2001. Contact hcontractor@sagar-kothari.com for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 22,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 32,
+    "end": 61,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9840839978. Alternate line +91 7681570752.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 62,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 14.27.242.241 rejected the request from 58.45.198.238.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 60,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 745398950. Date of birth 1957-04-04.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 67,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Pranit Bhandari, Dara Inc",
+  "pii": [
+   {
+    "start": 9,
+    "end": 24,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 26,
+    "end": 34,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #72507834 was shipped on 11-Sep-1954. Ticket TKT-141436 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 7276151413633437 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 1.25.1.77 fixes the crash. Reference INV-2023-6752, batch 530238342488.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 7881183939 confirmed; parcel weight 6.4 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 868.",
+  "pii": []
+ },
+ {
+  "text": "Hi, this is Hemal Pant. Please call me on +919862050580 or write to carpenteramanda@example.com.",
+  "pii": [
+   {
+    "start": 12,
+    "end": 22,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 42,
+    "end": 55,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 68,
+    "end": 95,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Customer Gary Barber (DOB: 29 July 1985) reported a login failure from IP 198.255.111.42.",
+  "pii": [
+   {
+    "start": 9,
+    "end": 20,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 27,
+    "end": 39,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 74,
+    "end": 88,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Payment failed for card 5400989760028224. Cardholder SSN 877-02-8082.",
+  "pii": [
+   {
+    "start": 24,
+    "end": 40,
+    "label": "CREDIT_CARD",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 68,
+    "label": "SSN",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Please ship the replacement to 692 Edwards Parks, North Jacqueline, VA 20590. Company: Bond-Robinson.",
+  "pii": [
+   {
+    "start": 31,
+    "end": 76,
+    "label": "ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 87,
+    "end": 100,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Born on 17-Jul-2003. Contact mrajagopalan@bahri.biz for verification.",
+  "pii": [
+   {
+    "start": 8,
+    "end": 19,
+    "label": "DOB",
+    "pool": ""
+   },
+   {
+    "start": 29,
+    "end": 51,
+    "label": "EMAIL",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Callback number: +91 9381097075. Alternate line +1-921-441-5344x796.",
+  "pii": [
+   {
+    "start": 17,
+    "end": 31,
+    "label": "PHONE",
+    "pool": ""
+   },
+   {
+    "start": 48,
+    "end": 67,
+    "label": "PHONE",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Server 139.6.117.125 rejected the request from 66.67.202.49.",
+  "pii": [
+   {
+    "start": 7,
+    "end": 20,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   },
+   {
+    "start": 47,
+    "end": 59,
+    "label": "IP_ADDRESS",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Social security number on file: 817273547. Date of birth March 26, 1970.",
+  "pii": [
+   {
+    "start": 32,
+    "end": 41,
+    "label": "SSN",
+    "pool": ""
+   },
+   {
+    "start": 57,
+    "end": 71,
+    "label": "DOB",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Regards, Eileen James, Keer, Sankar and Hayre",
+  "pii": [
+   {
+    "start": 9,
+    "end": 21,
+    "label": "PERSON",
+    "pool": "in"
+   },
+   {
+    "start": 23,
+    "end": 45,
+    "label": "ORG",
+    "pool": ""
+   }
+  ]
+ },
+ {
+  "text": "Order #64526378 was shipped on 8 November 1991. Ticket TKT-145000 is resolved.",
+  "pii": []
+ },
+ {
+  "text": "Tracking number 4410475168865611 is in transit; invoice total $1,234.56 for 3 items.",
+  "pii": []
+ },
+ {
+  "text": "Firmware 5.25.1.76 fixes the crash. Reference INV-2026-3121, batch 990456847983.",
+  "pii": []
+ },
+ {
+  "text": "Order ID 6265079003 confirmed; parcel weight 20.4 kg.",
+  "pii": []
+ },
+ {
+  "text": "The plan renews on the 15th; support hours are 9:00-17:30, ext. 113.",
+  "pii": []
+ }
+]
